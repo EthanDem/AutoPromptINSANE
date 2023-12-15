@@ -39,4 +39,4 @@ if st.button("Submit"):
 
   response = requests.post(url, json=data)
   
-  st.write("Status Code:", response.status_code)
+  st.write(f"results: {response.content}")
