@@ -44,4 +44,4 @@ if st.button("Submit"):
     messages = parsed_response['message']
 
     for msg in messages:
-        print(msg)
+        st.write(msg)
