@@ -37,11 +37,11 @@ data = {
 
 if st.button("Submit"):
 
-  response = requests.post(url, json=data)
-  
-  decoded_results = response.decode('utf-8')
-  parsed_results = json.loads(decoded_results)
-  messages = parsed_results["message"]
+    response = requests.post(url, json=data)
+    
+    parsed_response = response.json()
+    
+    messages = parsed_response['message']
 
-  for msg in messages:
-      st.write(msg)
+    for msg in messages:
+        print(msg)
