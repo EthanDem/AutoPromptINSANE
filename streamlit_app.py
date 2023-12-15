@@ -24,7 +24,7 @@ footer:after {
 
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
-url = "https://test-auto-prompt-select.icecube1513.repl.co/request"
+url = "https://auto-prompt.icecube1513.repl.co/request"
 
 userC = st.text_input("Enter Website Here")
 
