@@ -44,5 +44,5 @@ if st.button("Submit"):
     messages = parsed_response['message']
 
     for i, msg in enumerate(messages):
-        st.header(f"Message {i+1}")  
+        st.header(f"Response {i+1}")  
         st.write(msg)  
